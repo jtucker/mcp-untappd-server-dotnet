@@ -1,0 +1,24 @@
+{
+    "name": "Untappd MCP Server dotnet",
+    "dockerComposeFile": "docker-compose.yml",
+    "service": "mcpuntappd",
+    "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+    "postStartCommand": "dotnet restore",
+    "features": {
+        "ghcr.io/jlaundry/devcontainer-features/azure-functions-core-tools:1": {
+            "version": "latest"
+        },
+        "ghcr.io/devcontainers/features/azure-cli": {
+            "installBicep": true,
+            "extensions": "devops"
+        }
+    },   
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "Ionide.Ionide-fsharp"
+                
+            ]
+        }
+    } 
+}
