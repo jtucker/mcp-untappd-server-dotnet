@@ -1,0 +1,8 @@
+{
+    "azureFunctions.projectSubpath": "src/mcp-untappd",
+    "azureFunctions.deploySubpath": "src/mcp-untappd/bin/Release/net9.0/publish",
+    "azureFunctions.projectLanguage": "F#",
+    "azureFunctions.projectRuntime": "~4",
+    "debug.internalConsoleOptions": "neverOpen",
+    "azureFunctions.preDeployTask": "publish (functions)"
+}
