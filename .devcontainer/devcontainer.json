@@ -2,7 +2,7 @@
     "name": "Untappd MCP Server dotnet",
     "dockerComposeFile": "docker-compose.yml",
     "service": "mcpuntappd",
-    "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+    "workspaceFolder": "/workspaces",
     "postStartCommand": "dotnet restore",
     "features": {
         "ghcr.io/jlaundry/devcontainer-features/azure-functions-core-tools:1": {
@@ -17,7 +17,6 @@
         "vscode": {
             "extensions": [
                 "Ionide.Ionide-fsharp"
-                
             ]
         }
     } 

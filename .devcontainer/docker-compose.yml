@@ -22,7 +22,6 @@ services:
     image: mcr.microsoft.com/devcontainers/dotnet:9.0
     container_name: mcpuntappd
     hostname: mcpuntappd
-    platform: linux/x86_64
     command: sleep infinity
     environment:
       DOTNET_EnableWriteXorExecute: 0
@@ -31,4 +30,4 @@ services:
     depends_on:
       - azurite
     volumes:
-      - ../..:/workspaces:cached
+      - ..:/workspaces:cached
