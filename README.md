@@ -1,6 +1,6 @@
 # Untappd MCP Server using Azure Functions
 
-A version of the Untappd MCP Server using Azure Functions and Server Sent Events. 
+A version of the Untappd MCP Server using [Azure Functions and Server Sent Events](https://github.com/Azure-Samples/remote-mcp-functions-dotnet/tree/main). 
 
 ### Configure Claude Desktop
 
