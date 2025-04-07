@@ -2,6 +2,7 @@
 
 A version of the Untappd MCP Server using [Azure Functions and Server Sent Events](https://github.com/Azure-Samples/remote-mcp-functions-dotnet/tree/main). 
 
+Blog post coming soon.
 ### Configure Claude Desktop
 
 Since Claude Desktop does not currently support SSE configuration you need to include a middle man component to make the calls to the SSE server. 
