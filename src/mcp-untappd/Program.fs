@@ -2,16 +2,22 @@
 
 open Microsoft.Azure.Functions.Worker.Builder
 open Microsoft.Extensions.Hosting
+open Microsoft.Extensions.DependencyInjection
 
 let args = System.Environment.GetCommandLineArgs()
 
 let builder =    
     FunctionsApplication
-        .CreateBuilder(args)                
+        .CreateBuilder(args)
         .ConfigureFunctionsWebApplication()
 
 // Setup the MCP SDK Metadata
 builder.EnableMcpToolMetadata() |> ignore
+
+// add some options
+builder.Services.Configure<UntappdOptions>(builder.Configuration.GetSection "Untappd") |> ignore
+
+// Build and run the app
 builder
     .Build()
     .RunAsync()

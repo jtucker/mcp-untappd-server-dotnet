@@ -7,7 +7,8 @@
     <_FunctionsSkipCleanOutput>true</_FunctionsSkipCleanOutput>
   </PropertyGroup>
 
-  <ItemGroup>    
+  <ItemGroup><Compile Include="Constants.fs" />
+    <Compile Include="BeerTools.fs" />    
     <Compile Include="Program.fs" />
   </ItemGroup>
 
@@ -17,7 +18,8 @@
     <PackageReference Include="Microsoft.Azure.Functions.Worker" />
     <PackageReference Include="Microsoft.Azure.Functions.Worker.Extensions.Http.AspNetCore" />
     <PackageReference Include="Microsoft.Azure.Functions.Worker.Extensions.Mcp" />
-    <PackageReference Include="Microsoft.Azure.Functions.Worker.Sdk" />    
+    <PackageReference Include="Microsoft.Azure.Functions.Worker.Sdk" />
+    <PackageReference Include="Microsoft.Extensions.Options" />    
   </ItemGroup>
 
   <ItemGroup>
