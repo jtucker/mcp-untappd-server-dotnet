@@ -1,10 +1,11 @@
 ﻿module McpUntappdAzFunc.Program
 
+open System
 open Microsoft.Azure.Functions.Worker.Builder
 open Microsoft.Extensions.Hosting
 open Microsoft.Extensions.DependencyInjection
 
-let args = System.Environment.GetCommandLineArgs()
+let args = Environment.GetCommandLineArgs()
 
 let builder =    
     FunctionsApplication
@@ -15,7 +16,11 @@ let builder =
 builder.EnableMcpToolMetadata() |> ignore
 
 // add some options
-builder.Services.Configure<UntappdOptions>(builder.Configuration.GetSection "Untappd") |> ignore
+builder
+    .Services
+    .Configure<UntappdOptions>(builder.Configuration.GetSection "Untappd")
+    |> ignore
+    
 
 // Build and run the app
 builder
