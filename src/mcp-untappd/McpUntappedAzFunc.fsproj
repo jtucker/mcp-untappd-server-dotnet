@@ -7,7 +7,8 @@
     <_FunctionsSkipCleanOutput>true</_FunctionsSkipCleanOutput>
   </PropertyGroup>
 
-  <ItemGroup><Compile Include="Constants.fs" />
+  <ItemGroup>
+    <Compile Include="Constants.fs" />
     <Compile Include="BeerTools.fs" />    
     <Compile Include="Program.fs" />
   </ItemGroup>
@@ -15,6 +16,7 @@
   <ItemGroup>
     <FrameworkReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="FSharp.Core" />
+    <PackageReference Include="FShttp" />
     <PackageReference Include="Microsoft.Azure.Functions.Worker" />
     <PackageReference Include="Microsoft.Azure.Functions.Worker.Extensions.Http.AspNetCore" />
     <PackageReference Include="Microsoft.Azure.Functions.Worker.Extensions.Mcp" />
